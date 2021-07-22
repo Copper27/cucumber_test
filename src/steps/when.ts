@@ -16,6 +16,8 @@ import selectOptionByIndex from '../support/action/selectOptionByIndex';
 import setCookie from '../support/action/setCookie';
 import setInputField from '../support/action/setInputField';
 import setPromptText from '../support/action/setPromptText';
+import openWebsite from '../support/action/openWebsite';
+import openUrl from '../support/action/openUrl';
 
 When(
     /^I (click|doubleclick) on the (link|button|element) "([^"]*)?"$/,
@@ -96,3 +98,20 @@ When(
     /^I move to element "([^"]*)?"(?: with an offset of (\d+),(\d+))*$/,
     moveTo
 );
+
+// TODO
+
+When(
+    /^I go to "([^"]*)?"$/,
+    openUrl
+);
+
+When(
+    /^I (set|add)(?: Weight)? (Print On|Serial Number|Mail From ZIP|Mail To Country|lbs) to "([^"]*)?"(?: and (lbs|oz) to "([^"]*)?")?$/,
+    setInputField
+)
+
+// When(
+//     /^I (set|add) Weight (lbs|oz) to "([^"]*)?" and (lbs|oz) to "([^"]*)?"$/,
+
+// )

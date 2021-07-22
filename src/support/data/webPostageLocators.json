@@ -1,0 +1,9 @@
+{
+    "printOn" : "#printmediadroplist-1038-inputEl",
+    "serialNumber": "#sdc-mainpanel-nsserialtextfield-inputEl",
+    "mailFromZip": "#unauthMailFromZip-1048-inputEl",
+    "mailToCountry": "#combo-1063-inputEl",
+    "lbs": "#numberfield-1167-inputEl",
+    "oz": "#numberfield-1169-inputEl",
+    "service": "#sdc-mainpanel-servicedroplist-inputEl"
+}

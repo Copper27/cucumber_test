@@ -191,3 +191,17 @@ Then(
     /^I expect that a (alertbox|confirmbox|prompt)( not)* contains the text "([^"]*)?"$/,
     checkModalText
 );
+
+//TODO
+
+// removed 'the' for this case
+// possible to make steps case insensitive?
+Then(
+    /^I expect(?: the)? URL to( not)* contain "([^"]*)?"$/,
+    checkInURLPath
+);
+
+Then(
+    /^I expect that(?: Weight)? (lbs|oz) is "1"$/,
+    checkEqualsText
+)
