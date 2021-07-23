@@ -5,5 +5,8 @@
     "mailToCountry": "#combo-1063-inputEl",
     "lbs": "#numberfield-1167-inputEl",
     "oz": "#numberfield-1169-inputEl",
-    "service": "#sdc-mainpanel-servicedroplist-inputEl"
+    "serviceDropdown": "#sdc-mainpanel-servicedroplist-trigger-picker",
+    "letter": "#sdc-servicedroplist-fcletter",
+    "postcard": "#sdc-servicedroplist-fcpostcard",
+    "largeEnvelope": "#sdc-servicedroplist-fclargeenvelopeorflat"
 }

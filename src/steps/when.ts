@@ -107,11 +107,6 @@ When(
 );
 
 When(
-    /^I (set|add)(?: Weight)? (Print On|Serial Number|Mail From ZIP|Mail To Country|lbs) to "([^"]*)?"(?: and (lbs|oz) to "([^"]*)?")?$/,
+    /^I (set|add)(?: Weight)? (Print On|Serial Number|Mail From ZIP|Mail To Country|lbs|oz) to "([^"]*)?"(?: and (lbs|oz) to "([^"]*)?")?$/,
     setInputField
-)
-
-// When(
-//     /^I (set|add) Weight (lbs|oz) to "([^"]*)?" and (lbs|oz) to "([^"]*)?"$/,
-
-// )
+);

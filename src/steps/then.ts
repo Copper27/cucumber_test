@@ -31,6 +31,8 @@ import isVisible from '../support/check/isDisplayed';
 import waitFor from '../support/action/waitFor';
 import waitForVisible from '../support/action/waitForDisplayed';
 import checkIfElementExists from '../support/lib/checkIfElementExists';
+import checkText from '../support/check/checkText';
+import setService from '../support/action/setService';
 
 Then(
     /^I expect that the title is( not)* "([^"]*)?"$/,
@@ -202,6 +204,11 @@ Then(
 );
 
 Then(
-    /^I expect that(?: Weight)? (lbs|oz) is "1"$/,
-    checkEqualsText
+    /^I expect that(?: Weight)? (lbs|oz) is( not)* "([^"]*)?"$/,
+    checkText
+)
+
+Then(
+    /^I set (service) to "([^"]*)?"$/,
+    setService
 )
