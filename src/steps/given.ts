@@ -20,6 +20,7 @@ import isEnabled from '../support/check/isEnabled';
 import isDisplayed from '../support/check/isDisplayed';
 import openWebsite from '../support/action/openWebsite';
 import setWindowSize from '../support/action/setWindowSize';
+import openBrowser from '../support/action/openBrowser';
 
 Given(
     /^I open the (url|site) "([^"]*)?"$/,
@@ -125,3 +126,10 @@ Given(
     /^a (alertbox|confirmbox|prompt) is( not)* opened$/,
     checkModal
 );
+
+// TODO
+
+Given(
+    /^I launch (chrome|firefox) browser$/,
+    openBrowser
+)

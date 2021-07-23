@@ -59,6 +59,7 @@ export default (
         boolFalseCase = true;
     }
 
+    // if getValue returns empty string, try getText
     const text = $(selector)[command]();
     if (text.match("")) {
         command = 'getText';
