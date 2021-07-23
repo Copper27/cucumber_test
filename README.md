@@ -1,4 +1,19 @@
-Cucumber Boilerplate
+# How to run this test
+====================
+## Dependencies
+- Node v12.13.0 
+--(Node v16.4.0 latest was preventing node_modules/fibers from installing)
+- Chrome version 91 or higher
+
+1. Clone repository
+2. Using cmd, navigate to directory and run ```yarn install```
+3. To start test, run ```yarn run wdio```
+
+## - Known Issue
+- Given() step does not take 'browser' as a parameter, opens 'chrome' by default
+
+====================
+## Cucumber Boilerplate
 ====================
 
 [![Test](https://github.com/webdriverio/cucumber-boilerplate/actions/workflows/test.yaml/badge.svg)](https://github.com/webdriverio/cucumber-boilerplate/actions/workflows/test.yaml)
